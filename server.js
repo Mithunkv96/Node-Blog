@@ -35,7 +35,12 @@ switch(req.url)
         path += 'about.html';
         res.statusCode=301;
         res.setHeader('Location','/about');
-        break;    
+        break; 
+    case '/contact':
+        path += 'contact.html';
+        break;
+       
+
     default:
         path += '404.html';
         res.statusCode=404;
